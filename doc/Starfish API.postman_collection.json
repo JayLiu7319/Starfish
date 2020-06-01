@@ -1,0 +1,108 @@
+{
+  "info": {
+    "_postman_id": "03c9b5a3-bc87-467f-bc78-dec5e2db2a13",
+    "name": "Starfish API",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "item": [
+    {
+      "name": "获取API版本",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "{{octavia_api}}v1/",
+          "host": [
+            "{{octavia_api}}v1"
+          ],
+          "path": [
+            ""
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "获取一个测试实体信息",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "{{octavia_api}}v1/testentities/b1d89450-c5da-40b0-8460-e6b330eb89c8",
+          "host": [
+            "{{octavia_api}}v1"
+          ],
+          "path": [
+            "testentities",
+            "b1d89450-c5da-40b0-8460-e6b330eb89c8"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "获取全部测试实例信息",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "{{octavia_api}}v1/testentities/",
+          "host": [
+            "{{octavia_api}}v1"
+          ],
+          "path": [
+            "testentities",
+            ""
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "创建一个测试实例",
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "Content-Type",
+            "name": "Content-Type",
+            "value": "application/json",
+            "type": "text"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n\t\"testentity\":\r\n\t{\r\n\t    \t\"name\": \"big starfish\",\r\n\t    \t\"manage_ip\": \"192.168.240.139\"\r\n\t}\r\n}\r\n",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "{{octavia_api}}v1/testentities/",
+          "host": [
+            "{{octavia_api}}v1"
+          ],
+          "path": [
+            "testentities",
+            ""
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "获取后端Agent信息",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": ""
+        }
+      },
+      "response": []
+    }
+  ],
+  "protocolProfileBehavior": {}
+}
