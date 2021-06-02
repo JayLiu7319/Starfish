@@ -109,7 +109,7 @@ testscenarios==0.5.0
 testtools==2.3.0
 traceback2==1.4.0
 unittest2==1.1.0
-urllib3==1.25.8
+urllib3==1.26.5
 vine==1.3.0
 waitress==1.4.3
 WebOb==1.8.6
