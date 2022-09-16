@@ -63,7 +63,7 @@ oslo.policy==3.0.0
 oslo.reports==2.0.0
 oslo.serialization==3.0.0
 oslo.service==2.0.0
-oslo.utils==4.0.1
+oslo.utils==4.10.1
 oslotest==4.0.0
 Paste==3.4.0
 PasteDeploy==2.1.0
